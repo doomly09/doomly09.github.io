@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    float: right;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;   
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+    
+}
+
+a:hover {
+    color: rgba(grey, 0.5);
+    transform: translateY(-3px);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    overflow: hidden;
+    border-bottom: 1px white solid;
+    
+}
+
+#logo1 {
+    font-size: 3rem;
+    position: absolute;
+    top: -50px;    
+    color: white;
+}
+
+#logo2 {
+    color: white;
+    position: absolute;
+    left: 35px;
+    bottom: -3px;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    a {
+        width: 100%;
+        text-align: center; 
+        border-left: 1px solid white;
+        font-size: 1.3rem !important;
+        border: 1px solid white;
+    }
+    
+
+    .link:last-child {
+        border: 1px solid white !important;
+    }
+
+    .survey-header {
+        margin-right: 500px !important;
+    }
+}
+
+ input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    color: black; 
+ }  
+
+   
+  label {
+    display: block;
+  }
+
+  input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  input[type=submit]:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Style the container */
+  .survey-form {
+    border-radius: 5px;
+    padding: 20px;
+    width: 40%;
+    border: 1px solid white;
+    margin-top: 0;  
+    margin-left: 100px;
+    border-style: groove; 
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit], .survey-form {
+      width: 100% !important;
+      margin-top: 0;
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  option {
+    color: black;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .survey-header {
+    margin-left: 110px;
+  }
+
+  

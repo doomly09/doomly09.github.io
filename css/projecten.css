@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    float: right;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;   
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    transform: translateY(-3px);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    overflow: hidden;
+    border-bottom: 1px white solid;
+    
+}
+
+#logo1 {
+    font-size: 3rem;
+    position: absolute;
+    top: -50px;    
+    color: white;
+}
+
+#logo2 {
+    color: white;
+    position: absolute;
+    left: 35px;
+    bottom: -3px;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    a {
+        width: 100%;
+        text-align: center;
+        border-left: 1px solid white;
+        font-size: 1.3rem !important;
+        border: 1px solid white;
+    }
+
+    .link:last-child {
+        border-left: 1px solid white !important;
+        border-right: 1px solid white !important;
+    }
+
+    .gallery-whole {
+        flex-direction: column !important;
+    }
+
+    .container {
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 1750px)
+    {
+        .container{
+            margin-left: -115px;
+            margin-right: -115px;
+        }
+    }
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: height 1.5s ease, width 1s ease;
+}
+
+.gallery-whole {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.container {
+    border-radius: 10%;
+}
+
+hr {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+h1 {
+    margin-left: 30px;
+}
+
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.container:hover {
+    width: 1000px;
+}
+
+.gallery-whole2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+figcaption {
+}
